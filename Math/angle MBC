@@ -1,0 +1,10 @@
+import math
+
+a = int(input())
+b = int(input())
+c = a/b
+d = math.atan(c)
+d = math.degrees(d)
+d = round(d)
+d = str(d)
+print(d + chr(176))
