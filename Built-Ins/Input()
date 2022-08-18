@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+x, k = map(int, input().split())
+fx = input()
+
+a = eval(fx.replace('x', str(x)))
+if a==k:
+    print(True)
+else:
+    print(False)
