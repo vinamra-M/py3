@@ -1,0 +1,14 @@
+def average(array):
+    # your code goes here
+    setA = set(array)
+    l = len(setA)
+    s = sum(setA)
+    a = float(s/l)
+    a = '%0.3f' %a
+    return a
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
