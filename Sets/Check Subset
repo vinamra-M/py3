@@ -1,0 +1,14 @@
+T = int(input())
+
+for i in range(T):
+    M = input()
+    a = list(map(int, input().strip().split()))
+    N = input()
+    b = list(map(int, input().strip().split()))
+    s1 = set(a)
+    s2 = set(b)
+    s3 = s1.union(s2)
+    if s3 == s2:
+        print(True)
+    else:
+        print(False)  
