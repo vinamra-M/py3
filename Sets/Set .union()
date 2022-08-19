@@ -1,0 +1,10 @@
+M = input()
+a = list(map(int, input().strip().split()))
+N = input()
+b = list(map(int, input().strip().split()))
+
+s1 = set(a)
+s2 = set(b)
+s1 = s1.union(s2)
+s1 = list(s1)
+print(len(s1))
