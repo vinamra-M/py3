@@ -1,0 +1,9 @@
+M = input()
+a = list(map(int, input().strip().split()))
+N = input()
+b = list(map(int, input().strip().split()))
+
+s1 = set(a)
+s2 = set(b)
+s1 = s1.symmetric_difference(s2)
+print(len(s1))
