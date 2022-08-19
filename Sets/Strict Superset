@@ -1,0 +1,15 @@
+A = list(map(int, input().split()))
+s = set(A)
+r = 0
+n = int(input())
+for i in range(n):
+    a = list(map(int, input().split()))
+    s1 = set(a)
+    s2 = s1.intersection(s)
+    if s2 == s1 and s2 != s:
+        r = r+1
+    
+if r == n:
+    print(True)
+else:
+    print(False)
