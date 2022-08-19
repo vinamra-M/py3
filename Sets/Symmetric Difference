@@ -1,0 +1,14 @@
+M = input()
+a = list(map(int, input().strip().split()))
+N = input()
+b = list(map(int, input().strip().split()))
+
+s1 = set(a)
+s2 = set(b)
+
+s3 = s1.difference(s2)
+s4 = s2.difference(s1)
+s3 = s3.union(s4)
+s3 = sorted(s3)
+s3 = list(s3)
+print(*s3, sep = "\n")
