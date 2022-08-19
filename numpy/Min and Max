@@ -1,0 +1,14 @@
+import numpy
+a = list(map(int, input().split()))
+N = a[0]
+M = a[1]
+lis = []
+
+for i in range(N):
+    a = list(map(int,input().strip().split()))
+    lis.append(a)
+    
+arr = numpy.array(lis)
+b = numpy.min(arr, axis = 1)
+c = numpy.max(b)
+print(c)
