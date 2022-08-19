@@ -1,0 +1,5 @@
+import numpy
+lis = list(map(int, input().strip().split()))
+arr = numpy.array(lis)
+arr2 = numpy.reshape(arr, (3,3))
+print(arr2)
