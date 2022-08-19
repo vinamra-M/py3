@@ -1,0 +1,39 @@
+if __name__ == '__main__':
+    s = input()
+    
+    a =len(s)
+    b = 0
+    c = 0
+    d = 0
+    e = 0
+    for i in range(a):
+        if (ord(s[i]) >=65 and ord(s[i]) <= 90) or (ord(s[i]) >= 97 and ord(s[i]) <= 122):
+            b = b +1
+        elif ord(s[i]) >=48 and ord(s[i]) <= 57:
+            c = c +1
+        
+        if ord(s[i]) >= 97 and ord(s[i]) <= 122:
+            d = d +1
+        elif ord(s[i]) >=65 and ord(s[i]) <= 90:
+            e = e +1
+    if d>0 or e>0 or c>0:
+        print(True)
+    else:
+        print(False)
+    if b>0:
+        print(True)
+    else:
+        print(False)
+    if c>0:
+        print(True)
+    else:
+        print(False)
+    if d>0:
+        print(True)
+    else:
+        print(False)
+    if e>0:
+        print(True)
+    else:
+        print(False)
+            
