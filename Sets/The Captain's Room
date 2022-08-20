@@ -1,0 +1,17 @@
+K = int(input())
+room = list(map(int, input().split()))
+
+room.sort()
+
+
+s = len(room)
+groups = (s-1)//K
+for i in range(0,s,K):
+    if i+K-1 >s:
+        break
+    if room[i] == room[i+K-1]:
+        continue
+    elif room[i] != room[i+K-1]:
+        room2 = i
+        break
+print(room[i])
