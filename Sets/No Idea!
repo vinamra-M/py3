@@ -1,0 +1,14 @@
+a = list(map(int, input().split()))
+n = a[0]
+m = a[1]
+arr = list(map(int, input().split()))
+A = set(map(int, input().split()))
+B = set(map(int, input().split()))
+happi = 0
+for i in arr:
+    if i in A:
+        happi+=1
+    elif i in B:
+        happi-=1
+        
+print(happi)
