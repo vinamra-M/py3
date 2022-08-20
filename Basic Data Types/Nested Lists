@@ -1,0 +1,32 @@
+if __name__ == '__main__':
+    lis = []
+    sc = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        sc.append(score)
+        lis.append([name, score])
+
+    lis.sort(key=lambda x: x[1])
+    m = min(sc)
+    for i in range(len(lis)):
+        if lis[i][1] == m:
+            lis[i][1] == 100000.0
+
+    for j in range(len(sc)):
+        if sc[j] == m:
+            sc[j] = 1000000.0
+
+    
+    n = min(sc)
+    na = []
+    for k in lis:
+        if k[1] == n:
+            na.append(k[0])
+
+na.sort()
+for l in range(len(na)):
+    print(na[l])
+
+
+
