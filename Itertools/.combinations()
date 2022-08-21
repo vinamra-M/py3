@@ -1,0 +1,13 @@
+from itertools import combinations
+a = list(input().split(" "))
+S = a[0]
+L = list(S)
+L.sort()
+k = int(a[1])
+for j in range(1, k+1):
+    b = list(combinations(L, j))
+    b.sort()
+    for k in range(len(b)):
+        st = ""
+        st = "".join(b[k])
+        print(st)
