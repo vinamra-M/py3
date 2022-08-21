@@ -1,0 +1,20 @@
+N = int(input())
+m = list(input().split())
+lis = map(int, m)
+n = len(m)
+r = 0
+for i in lis:
+    if i > 0:
+        r+=1
+s = 0   
+if r != n:
+    print(False)
+else:
+    for j in range(n):
+        if(m[j]==m[j][::-1]):
+            print(True)
+            break
+        else:
+            s+=1
+if s==n:
+    print(False) 
