@@ -1,0 +1,12 @@
+from itertools import permutations
+a = list(input().split(" "))
+s = a[0]
+k = int(a[1])
+L = list(s)
+L.sort()
+p = permutations(L, k)
+b = list(p)
+for i in range(len(b)):
+    st = ""
+    st = "".join(b[i])
+    print(st)
