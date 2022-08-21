@@ -1,0 +1,28 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s = list(input())
+lis1 = []
+lis2 = []
+lis3 = []
+lis4 = []
+for i in s:
+    if ord(i)>=97 and ord(i)<=122:
+        lis1.append(i)
+    elif ord(i)>=65 and ord(i)<=90:
+        lis2.append(i)
+    elif ord(i)%2 ==0:
+        lis3.append(i)
+    else:
+        lis4.append(i)
+
+lis1.sort()
+lis2.sort()
+lis3.sort()
+lis4.sort()
+str1 = "".join(lis1)
+str2 = "".join(lis2)
+str3 = "".join(lis4)
+str4 = "".join(lis3)
+print(str1, end="")
+print(str2, end="")
+print(str3, end="")
+print(str4, end="")
