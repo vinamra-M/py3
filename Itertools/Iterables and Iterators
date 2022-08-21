@@ -1,0 +1,21 @@
+from itertools import combinations
+
+n = int(input())
+k = list(input().split(" "))
+m = int(input())
+k.sort()
+b = list(combinations(k, m))
+b.sort()
+p = len(k)
+s = len(b)
+r = 0
+for i in k:
+    if i == 'a':
+        r += 1
+lis = []
+h = p-r
+for o in range(h):
+    lis.append(o)
+q = list(combinations(lis, m))
+add = len(q)
+print((s - add) / s)
