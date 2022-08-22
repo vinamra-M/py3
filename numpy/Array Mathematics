@@ -1,0 +1,19 @@
+import numpy
+N, M = list(map(int, input().split()))
+A = []
+B = []
+for i in range(N):
+    x = list(map(int, input().split()))
+    A.append(x)
+for j in range(N):
+    y = list(map(int, input().split()))
+    B.append(y)
+
+a = numpy.array(A, int)
+b = numpy.array(B, int)
+print(a+b)
+print(a-b)
+print(a*b)
+print(numpy.floor_divide(a,b))
+print(a%b)
+print(a**b)
