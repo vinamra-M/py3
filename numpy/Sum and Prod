@@ -1,0 +1,9 @@
+import numpy
+N, M = list(map(int, input().split()))
+A = []
+for i in range(N):
+    x = list(map(int, input().split()))
+    A.append(x)
+my_array = numpy.array(A)
+B = numpy.sum(my_array, axis=0)
+print(numpy.prod(B))
