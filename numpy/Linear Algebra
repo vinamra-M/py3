@@ -1,0 +1,10 @@
+import numpy
+N = int(input())
+a = []
+for _ in range(N):
+    x = list(map(float, input().split()))
+    a.append(x)
+my_array = numpy.array(a)
+print(numpy.round(numpy.linalg.det(my_array), decimals = 2))
+
+
