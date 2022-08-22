@@ -1,0 +1,16 @@
+import numpy
+N = int(input())
+a = []
+b = []
+for _ in range(N):
+    x = list(map(int, input().split()))
+    a.append(x)
+    
+for _ in range(N):
+    y = list(map(int, input().split()))
+    b.append(y)
+
+A = numpy.array(a)
+B = numpy.array(b)
+print(numpy.dot(A, B))
+
