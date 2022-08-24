@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import namedtuple
+N = int(input())
+fields = input().split()
+student = namedtuple('student', fields)
+
+l=0
+for _ in range(N):
+    f1,f2,f3,f4=input().split()
+    p=student(f1,f2,f3,f4)
+    l+=float(p.MARKS)
+print("%.2f"%(l/N))
