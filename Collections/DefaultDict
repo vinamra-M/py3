@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import defaultdict
+x, y = list(map(int, input().split()))
+
+dict_A = defaultdict(list)
+
+for i in range(1, x+1):
+    dict_A[input()].append(i)
+    
+lis_B = [input() for i in range(0, y)]
+for j in lis_B:
+    print (-1) if not j in dict_A else print(*dict_A[j])
