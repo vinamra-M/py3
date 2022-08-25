@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import calendar
+import datetime
+m, d, y = list(map(int, input().split(" ")))
+N = datetime.date(y, m, d)
+x = N.strftime("%A").upper()
+print(x)
