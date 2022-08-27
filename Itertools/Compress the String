@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import groupby
+
+s = input()
+
+for i in groupby(s):
+    print((int(i[0]), len([j for j in i[1]]))[-1::-1], end=' ')
